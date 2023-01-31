@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animated Login Form | CodingNepal</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+  </head>
+  <body>
+    <div class="center">
+      <img src="logo.svg" alt="CEA">
+      <h1>Login</h1>
+      <form method="post" action="login.html">
+        <div class="txt_field">
+          <i class="fa-solid fa-envelope"></i>
+          <input type="text" required placeholder="Email" id="email">
+        </div>
+        <div class="txt_field">
+          <i class="fa-solid fa-lock"></i>
+          <input type="password" required placeholder="Password" id="password">
+        </div>
+        <input type="submit" value="Login" id="button" onkeydown="return check()">
+        <div class="pass">Forgot Password?</div>
+        <div class="signup_link">
+          Don't have an account? <a href="#">Register here</a>
+        </div>
+      </form>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
